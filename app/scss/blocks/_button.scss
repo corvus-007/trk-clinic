@@ -13,11 +13,11 @@
   text-transform: uppercase;
   color: $base-color;
   background-color: transparent;
-  border: 1px solid;
-  letter-spacing: 0.025em;
+  border: 1px solid $base-color;
+  letter-spacing: 0.035em;
   box-sizing: border-box;
-  box-shadow: 0 0px 12px rgba($accent-color, 0.2);
-  border-radius: 4px;
+  box-shadow: none;
+  border-radius: 0;
   outline: none;
   user-select: none;
   transition: $duration * 2;
@@ -26,13 +26,13 @@
   &:hover,
   &:focus {
     color: #ffffff;
+    border-color: lighten($accent-color, 6%);
     background-color: lighten($accent-color, 6%);
-    box-shadow: 0 0px 20px rgba($accent-color, 0.5);
-
   }
 
   &:active {
     color: #ffffff;
+    border-color: darken($accent-color, 6%);
     background-color: darken($accent-color, 6%);
   }
 

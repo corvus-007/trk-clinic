@@ -6,16 +6,10 @@
   @include clear-list();
 
   li {
-    margin-bottom: rem(20);
+    margin-bottom: 20px;
 
     &:last-child {
       margin-bottom: 0;
-    }
-  }
-
-  @include mq-min(768px) {
-    li {
-      margin-bottom: rem(25);
     }
   }
 }
@@ -23,53 +17,55 @@
 .app-slider-controls__button {
   position: relative;
   padding: 0;
-  padding-left: rem(35);
+  padding-left: 35px;
   font-weight: 500;
-  font-size: rem(12);
+  font-size: 12px;
+  line-height: 24px;
   font-family: $secondary-font;
-  border: none;
-  color: #ffffff;
-  background: none;
   text-align: left;
   text-transform: uppercase;
-  transition: ($duration * 1.5);
+  color: #ffd2d3;
+  background: none;
+  border: none;
+  transition: $duration * 1.5;
   user-select: none;
   cursor: pointer;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0.2em;
+    top: 50%;
     left: 0;
-    width: rem(6);
-    height: rem(6);
-    border: 3px solid transparent;
-    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    transform: translateY(-50%);
+    background-color: #1e1e1e;
     background-clip: content-box;
-    box-shadow: 0 0 0 8px rgba(#ffffff, 0.4), 0 0 0 4px rgba(#ffffff, 0.4);
+    border: 3px solid #1e1e1e;
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px rgba(#ffffff, 0.2),  0 0 0 3px rgba(#ffffff, 0.4);
     transition: ($duration * 1.5);
     will-change: transform;
   }
 
   &:hover {
     opacity: 0.9;
-
   }
 
   &:focus {
     outline: none;
   }
 
-  @include mq-min(1200) {
+  @include mq-min(1200px) {
     white-space: nowrap;
   }
 }
 
 .slick-active .app-slider-controls__button {
-  color: $accent-color;
+  color: #1e1e1e;
 
   &::before {
     background-color: #ffffff;
-    transform: scale(1.2);
+    transform: translateY(-50%) scale(1.2);
   }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="navbar">
@@ -52,131 +54,149 @@
   </div>
 
   <section class="welcome">
+    <div class="container">
+      <div class="welcome__content">
+        <h2 class="welcome__title">Медицина будущего</h2>
+        <p class="welcome__text">Медицинские услуги c применением самых передовых технологий и высоким уровнем
+          сервиса</p>
+        <p class="welcome__actions">
+          <a class="welcome__button button" href="">Подробнее</a>
+        </p>
+      </div>
+    </div>
     <div class="welcome__slider-wrapper">
       <div class="welcome__slider welcome-slider" data-welcome-slider>
         <div class="welcome-slider__item welcome-slide">
-          <div class="welcome-slide__inner container">
-            <div class="welcome-slide__content">
-              <h2 class="welcome-slide__title">Медицина будущего</h2>
-              <p class="welcome-slide__text">Медицинские услуги c применением самых передовых технологий и высоким уровнем сервиса</p>
-              <p class="welcome-slide__actions">
-                <a class="welcome-slide__button button" href="">Подробнее</a>
-              </p>
-            </div>
-          </div>
-          <div class="welcome-slide__picture-frame">
-            <div class="welcome-slide__picture">
-              <img src="https://images.unsplash.com/photo-1534469693708-b3428f119ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b2e46c661ff01638d28fad1a61a8059c&auto=format&fit=crop&w=1350&q=80" alt="">
-            </div>
+          <div class="welcome-slide__picture">
+            <img src="https://images.unsplash.com/photo-1534469693708-b3428f119ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b2e46c661ff01638d28fad1a61a8059c&auto=format&fit=crop&w=1350&q=80"
+              alt="">
           </div>
         </div>
         <div class="welcome-slider__item welcome-slide">
-          <div class="welcome-slide__inner container">
-            <div class="welcome-slide__content">
-              <h2 class="welcome-slide__title">Медицина настоящего</h2>
-              <p class="welcome-slide__text">Медицинские услуги c применением самых передовых технологий и высоким уровнем сервиса</p>
-              <p class="welcome-slide__actions">
-                <a class="welcome-slide__button button" href="">Подробнее</a>
-              </p>
-            </div>
-          </div>
-          <div class="welcome-slide__picture-frame">
-            <div class="welcome-slide__picture">
-              <img src="https://images.unsplash.com/photo-1527676343783-62ec30e7ae0f?ixlib=rb-0.3.5&s=18183add8271eb308f92015562604fb2&auto=format&fit=crop&w=1350&q=80" alt="">
-            </div>
+          <div class="welcome-slide__picture">
+            <img src="https://images.unsplash.com/photo-1527676343783-62ec30e7ae0f?ixlib=rb-0.3.5&s=18183add8271eb308f92015562604fb2&auto=format&fit=crop&w=1350&q=80"
+              alt="">
           </div>
         </div>
         <div class="welcome-slider__item welcome-slide">
-          <div class="welcome-slide__inner container">
-            <div class="welcome-slide__content">
-              <h2 class="welcome-slide__title">Медицина прошлого</h2>
-              <p class="welcome-slide__text">Медицинские услуги c применением самых передовых технологий и высоким уровнем сервиса</p>
-              <p class="welcome-slide__actions">
-                <a class="welcome-slide__button button" href="">Подробнее</a>
-              </p>
-            </div>
-          </div>
-          <div class="welcome-slide__picture-frame">
-            <div class="welcome-slide__picture">
-              <img src="https://images.unsplash.com/photo-1499054488849-3dd812295ef0?ixlib=rb-0.3.5&s=092cd878ae3f988b68f2aaf0b73169bd&auto=format&fit=crop&w=1350&q=80" alt="">
-            </div>
+          <div class="welcome-slide__picture">
+            <img src="https://images.unsplash.com/photo-1499054488849-3dd812295ef0?ixlib=rb-0.3.5&s=092cd878ae3f988b68f2aaf0b73169bd&auto=format&fit=crop&w=1350&q=80"
+              alt="">
           </div>
         </div>
-        <div class="container">
-          <div class="welcome-slider__pager">
-            <button class="welcome-slider__control welcome-slider__control--prev" data-slide-action="slide-prev" type="button">Предыдущий слайд</button>
-            <button class="welcome-slider__control welcome-slider__control--next" data-slide-action="slide-next" type="button">Следующий слайд</button>
-            <div class="welcome-slider__counter"></div>
-          </div>
+
+        <div class="welcome-slider__pager">
+          <button class="welcome-slider__control welcome-slider__control--prev" data-slide-action="slide-prev" type="button"
+            aria-label="Предыдущий слайд">
+            <svg class="welcome-slider__control-icon" width="16" height="16">
+              <use xlink:href="images/symbols.svg#arrow-prev"></use>
+            </svg>
+          </button>
+          <button class="welcome-slider__control welcome-slider__control--next" data-slide-action="slide-next" type="button"
+            aria-label="Следующий слайд">
+            <svg class="welcome-slider__control-icon" width="16" height="16">
+              <use xlink:href="images/symbols.svg#arrow-next"></use>
+            </svg>
+          </button>
+          <div class="welcome-slider__counter"></div>
         </div>
       </div>
     </div>
     <div class="container">
-      <div class="welcome__social">
-
-      </div>
+      <ul class="welcome__social welcome-social">
+        <li><a href="" target="_blank">Вконтакте</a></li>
+        <li><a href="" target="_blank">Инстаграм</a></li>
+        <li><a href="" target="_blank">Фейсбук</a></li>
+      </ul>
     </div>
   </section>
 
   <section class="section app-presentation">
     <div class="app-presentation__inner container">
-      <div class="app-presentation__content">
-        <h2 class="app-presentation__title">Мобильное приложение</h2>
-        <div class="app-presentation__subtitle">
-          <p>Вызвать такси с помощью нашего мобильного приложения – проще простого! Скачивай в App Store и Google Play уже сейчас.</p>
-        </div>
-        <div class="download-apps download-apps--large">
-          <ul class="download-apps__list">
-            <li class="download-apps__item">
-              <a href="#" class="download-apps__link">
-                <img class="download-apps__image" src="images/googleplay.svg" alt="googleplay" width="100">
-              </a>
-            </li>
-            <li class="download-apps__item">
-              <a href="#" class="download-apps__link">
-                <img class="download-apps__image" src="images/appstore.svg" alt="appstore" width="100">
-              </a>
-            </li>
-          </ul>
+      <div class="app-presentation__column app-presentation__content-wrapper">
+        <div class="app-presentation__content">
+          <h2 class="app-presentation__title">История болезни по всему миру</h2>
+          <div class="app-presentation__description">
+            <p>С помощью нашего мобильного приложения, ваша история болезни будет всегда под рукой! При необходимости,
+              даже в другом городе, вы всегда сможете узнать результаты проведенных исследований и рекомендации
+              лечащего врача.</p>
+          </div>
+          <div class="app-presentation__download-apps download-apps download-apps--large">
+            <ul class="download-apps__list">
+              <li class="download-apps__item">
+                <a href="#" class="download-apps__link">
+                  <img class="download-apps__image" src="images/googleplay.svg" alt="googleplay" width="100">
+                </a>
+              </li>
+              <li class="download-apps__item">
+                <a href="#" class="download-apps__link">
+                  <img class="download-apps__image" src="images/appstore.svg" alt="appstore" width="100">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
       </div>
-      <div class="app-presentation__slider">
-        <div class="app__column app__column--slider">
-          <div class="app-slider-mocup-phone">
-            <div class="app-slider" data-app-slider>
-              <div class="app-slider__item">
-                <img class="app-slider__image" src="http://placehold.it/200x356/00ADB5/fff" srcset="http://placehold.it/400x712/00ADB5/fff 2x"
-                  alt="">
-                <span class="app-slider__description">Удобный выбор пунктов отправки и назначения</span>
-              </div>
-              <div class="app-slider__item">
-                <img class="app-slider__image" src="http://placehold.it/200x356/F9ED69/fff" srcset="http://placehold.it/400x712/F9ED69/fff 2x"
-                  alt="">
-                <span class="app-slider__description">Отслеживание автомобиля в режиме реального времени</span>
-              </div>
-              <div class="app-slider__item">
-                <img class="app-slider__image" src="http://placehold.it/200x356/F08A5D/fff" srcset="http://placehold.it/400x712/F08A5D/fff 2x"
-                  alt="">
-                <span class="app-slider__description">Привязка банковской карты</span>
-              </div>
-              <div class="app-slider__item">
-                <img class="app-slider__image" src="http://placehold.it/200x356/B83B5E/fff" srcset="http://placehold.it/400x712/B83B5E/fff 2x"
-                  alt="">
-                <span class="app-slider__description">Сохранение истории прошлых поездок</span>
-              </div>
-              <div class="app-slider__item">
-                <img class="app-slider__image" src="http://placehold.it/200x356/6A2C70/fff" srcset="http://placehold.it/400x712/6A2C70/fff 2x"
-                  alt="">
-                <span class="app-slider__description">Информация о количестве бонусных баллов</span>
-              </div>
+      <div class="app-presentation__column app-presentation__slider-wrapper">
+        <div class="app-slider-mocup-phone">
+          <div class="app-slider" data-app-slider>
+            <div class="app-slider__item">
+              <img class="app-slider__image" src="http://placehold.it/200x356/00ADB5/fff" srcset="http://placehold.it/400x712/00ADB5/fff 2x"
+                alt="">
+              <span class="app-slider__description">Онлайн-запись на прием</span>
             </div>
-            <button class="app-slider-mocup-phone__touch-id" type="button">Следующий слайд</button>
+            <div class="app-slider__item">
+              <img class="app-slider__image" src="http://placehold.it/200x356/F9ED69/fff" srcset="http://placehold.it/400x712/F9ED69/fff 2x"
+                alt="">
+              <span class="app-slider__description">Информация по всем оказываемым услугам</span>
+            </div>
+            <div class="app-slider__item">
+              <img class="app-slider__image" src="http://placehold.it/200x356/F08A5D/fff" srcset="http://placehold.it/400x712/F08A5D/fff 2x"
+                alt="">
+              <span class="app-slider__description">История болезни прямо в кармане</span>
+            </div>
+            <div class="app-slider__item">
+              <img class="app-slider__image" src="http://placehold.it/200x356/B83B5E/fff" srcset="http://placehold.it/400x712/B83B5E/fff 2x"
+                alt="">
+              <span class="app-slider__description">Уведомления о результатах обследования</span>
+            </div>
+          </div>
+          <button class="app-slider-mocup-phone__touch-id" type="button" aria-label="Следующий слайд"></button>
+        </div>
+      </div>
+      <div class="app-presentation__column app-presentation__slider-controls-wrapper">
+        <div class="app-presentation__slider-controls">
+          <div class="app-slider-controls" data-app-slider-controls>
+            <!-- generate from js -->
           </div>
         </div>
-        <div class="app__column app__column--controls">
-          <div class="app-slider-controls" data-app-slider-controls></div>
-        </div>
+        <a class="app-presentation__more-button button" href="">Подробнее</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="common-section services">
+    <div class="container">
+      <div class="common-header">
+        <h2 class="common-title">Направления деятельности специалистов</h2>
+      </div>
+      <ul class="services__handlist services-handlist">
+        <li>
+          <span>A</span>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="services__persons services-persons"></ul>
+    </div>
+  </section>
+
+  <section class="common-section feedback">
+    <div class="container">
+      <div class="common-header">
+        <h2 class="common-title">Жалобы и предложения</h2>
       </div>
     </div>
   </section>
@@ -192,4 +212,5 @@
   @@include('blocks/main-footer.html')
   @@include('blocks/site-scripts.html')
 </body>
+
 </html>
