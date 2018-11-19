@@ -1,0 +1,15 @@
+.app-presentation {
+  color: #ffffff;
+  background-color: $accent-color;
+  // background: $accent-color url("images/bg-section-app.jpg") no-repeat center;
+}
+
+.app-presentation__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mq-min(768px) {
+    flex-direction: row;
+  }
+}

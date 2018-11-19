@@ -1,0 +1,40 @@
+.download-apps {
+
+}
+
+.download-apps__list {
+  @include clear-list();
+
+  display: flex;
+}
+
+.download-apps__item {
+  margin-right: rem(16);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.download-apps__link {
+  display: block;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: #000000;
+  border-radius: $border-radius;
+  transition: $duration;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.download-apps__image {
+  vertical-align: middle;
+  width: rem(100);
+}
+
+.download-apps--large .download-apps__image {
+  width: rem(125);
+}

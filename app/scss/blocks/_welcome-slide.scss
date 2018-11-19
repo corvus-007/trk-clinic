@@ -1,0 +1,76 @@
+.welcome-slide {
+  position: relative;
+  min-height: 420px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.welcome-slide__inner {
+  position: relative;
+  height: 100%;
+}
+
+.welcome-slide__content {
+  box-sizing: border-box;
+
+  @include mq-min(1024px) {
+    position: absolute;
+    z-index: 2;
+    top: calc(50% + 75px);
+    transform: translateY(-50%);
+    max-width: 50%;
+    padding-left: 130px;
+  }
+}
+
+.welcome-slide__title {
+  margin: 0;
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 1;
+}
+
+.welcome-slide__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.welcome-slide__actions {
+
+}
+
+.welcome-slide__button {
+
+}
+
+.welcome-slide__picture-frame {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: calc(50% + 150px);
+  // margin-left: auto;
+  padding-top: 150px;
+  background-color: #81fbb8;
+  box-sizing: border-box;
+}
+
+.welcome-slide__picture {
+  @include make-fit-object(789, 645);
+
+  height: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(#ffffff, 0.4);
+  }
+}

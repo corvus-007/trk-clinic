@@ -1,0 +1,75 @@
+.app-slider-controls {
+
+}
+
+.app-slider-controls__list {
+  @include clear-list();
+
+  li {
+    margin-bottom: rem(20);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq-min(768px) {
+    li {
+      margin-bottom: rem(25);
+    }
+  }
+}
+
+.app-slider-controls__button {
+  position: relative;
+  padding: 0;
+  padding-left: rem(35);
+  font-weight: 500;
+  font-size: rem(12);
+  font-family: $secondary-font;
+  border: none;
+  color: #ffffff;
+  background: none;
+  text-align: left;
+  text-transform: uppercase;
+  transition: ($duration * 1.5);
+  user-select: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.2em;
+    left: 0;
+    width: rem(6);
+    height: rem(6);
+    border: 3px solid transparent;
+    border-radius: 50%;
+    background-clip: content-box;
+    box-shadow: 0 0 0 8px rgba(#ffffff, 0.4), 0 0 0 4px rgba(#ffffff, 0.4);
+    transition: ($duration * 1.5);
+    will-change: transform;
+  }
+
+  &:hover {
+    opacity: 0.9;
+
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @include mq-min(1200) {
+    white-space: nowrap;
+  }
+}
+
+.slick-active .app-slider-controls__button {
+  color: $accent-color;
+
+  &::before {
+    background-color: #ffffff;
+    transform: scale(1.2);
+  }
+}
