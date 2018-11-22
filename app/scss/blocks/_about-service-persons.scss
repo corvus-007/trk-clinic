@@ -1,0 +1,16 @@
+.about-service-persons {
+
+}
+
+.about-service-persons__list {
+  @include clear-list();
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-gap: 50px;
+  margin-top: 40px !important;
+}
+
+.about-service-persons__list-item {
+
+}

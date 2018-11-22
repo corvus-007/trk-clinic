@@ -1,9 +1,12 @@
 .welcome-slide {
   position: relative;
-  min-height: 420px;
+  min-height: 375px;
   height: 100vh;
-  padding-top: 150px;
   box-sizing: border-box;
+
+  @include mq-min(1024px) {
+    // padding-top: 150px;
+  }
 }
 
 .welcome-slide__picture {

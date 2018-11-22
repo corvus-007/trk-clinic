@@ -1,0 +1,47 @@
+.person-profile {
+  position: relative;
+
+  @include mq-max(1023px) {
+    padding-top: 0;
+  }
+
+  @include mq-min(1024px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+}
+
+.person-profile__photo-wrapper {
+  margin-left: -$gutter / 2;
+  margin-right: -$gutter / 2;
+
+  @include mq-min(1024px) {
+    position: relative;
+    top: 70px;
+    flex-shrink: 0;
+    width: 40%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.person-profile__photo {
+  margin-bottom: 40px;
+
+  @include mq-min(1024px) {
+    @include make-fit-object();
+
+    margin-bottom: 0;
+    border-radius: 50%;
+  }
+}
+
+.person-profile__content {
+  @include mq-min(1024px) {
+    flex-grow: 1;
+    width: 60%;
+    padding-right: 60px;
+    box-sizing: border-box;
+  }
+}

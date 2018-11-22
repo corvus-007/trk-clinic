@@ -18,15 +18,22 @@
 }
 
 .app-presentation__column {
-  @include mq-min(1024px) {
-    width: 50%;
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mq-min(768px) {
     flex-grow: 1;
+    width: 50%;
+    margin-bottom: 0;
     box-sizing: border-box;
   }
 }
 
 .app-presentation__content-wrapper {
-  @include mq-min(1024px) {
+  @include mq-min(768px) {
     padding-right: 30px;
   }
 }
@@ -49,21 +56,39 @@
   line-height: 24px;
 }
 
-.app-presentation__download-apps {}
+.app-presentation__download-apps {
+  .download-apps__list {
+    justify-content: center;
+  }
+
+  @include mq-min(768px) {
+    .download-apps__list {
+      justify-content: flex-start;
+    }
+  }
+}
 
 .app-presentation__slider-wrapper {
   flex-basis: 220px;
 }
 
 .app-presentation__slider-controls-wrapper {
-  @include mq-min(1024px) {
+  @include mq-min(768px) {
     padding-left: 50px;
   }
 }
 
 .app-presentation__slider-controls {
-  // margin-left: -60px;
   margin-bottom: 35px;
+}
+
+.app-presentation__actions {
+  margin: 0;
+  text-align: center;
+
+  @include mq-min(768px) {
+    text-align: left;
+  }
 }
 
 .app-presentation__more-button {

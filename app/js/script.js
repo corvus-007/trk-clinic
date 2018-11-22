@@ -1,5 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   svg4everybody();
+
+  $('input[type="tel"]').inputmask({
+    "mask": "+7 (999) 999-99-99"
+  });
+
+  window.addEventListener('scroll', function () {
+    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrolled > 0) {
+      document.body.classList.add('is-navbar-sticky');
+    } else {
+      document.body.classList.remove('is-navbar-sticky');
+    }
+  });
 
   var appSlider = document.querySelector('.app-slider');
   var appSliderTouchId = document.querySelector(
@@ -7,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
   );
 
   if (appSlider) {
-    appSliderTouchId.addEventListener('click', function(event) {
+    appSliderTouchId.addEventListener('click', function (event) {
       event.preventDefault();
       $(appSlider).slick('slickNext');
     });
@@ -16,10 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
   $(appSlider).slick({
     accessibility: false,
     arrows: false,
+    speed: 700,
     dots: true,
+    autoplay: true,
     appendDots: '.app-slider-controls',
     dotsClass: 'app-slider-controls__list',
-    customPaging: function(slider, i) {
+    customPaging: function (slider, i) {
       var currentSlide = slider.$slides[i];
       var descriptionSlide = currentSlide.querySelector(
         '.app-slider__description'
@@ -33,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Welcome sldier
+  // Welcome slider
   var $welcomeSlider = $('[data-welcome-slider]');
 
   if ($welcomeSlider.length) {
@@ -70,18 +85,51 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $welcomeSlider.slick({
       accessibility: false,
-      speed: 800,
-      dots: false,
+      speed: 700,
       arrows: false,
-      infinite: true,
       slide: '.welcome-slider__item',
       responsive: [{
         breakpoint: 1024,
         settings: {
-          arrows: false
+          autoplay: true,
         }
       }]
     });
   }
 
+  $('[data-services-persons]').slick({
+    accessibility: false,
+    speed: 700,
+    centerMode: true,
+    slidesToShow: 3,
+    centerPadding: '0',
+    responsive: [{
+      breakpoint: 770,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '5%',
+        arrows: false
+      }
+    }, {
+      breakpoint: 670,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '25%',
+        arrows: false
+      }
+    }, {
+      breakpoint: 470,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '15%',
+        arrows: false
+      }
+    }]
+  });
+
+  if (window.matchMedia('(min-width: 1024px)').matches) {
+    $('.person-profile__photo-wrapper').stick_in_parent({
+      offset_top: 110
+    });
+  }
 });

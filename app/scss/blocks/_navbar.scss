@@ -1,15 +1,67 @@
 .navbar {
   position: fixed;
   left: 0;
-  right: 0;
-  z-index: 10;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #fff;
+  top: 0;
+  z-index: 30;
+  width: 100vw;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: $duration * 1.5;
+
+  body:not(.homepage) & {
+    background-color: $gray-249;
+  }
+
+  .is-out-cover-opened:not(.homepage) & {
+    background-color: #ffffff;
+  }
+
+  .is-navbar-sticky.homepage & {
+    background-color: #ffffff;
+  }
+
+  .is-navbar-sticky & {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @include mq-min(1024px) {
+    .homepage & {
+      background-color: #fff;
+    }
+
+    .is-navbar-sticky & {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  @include mq-min(1200px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .navbar__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.navbar__logo {
+  margin-right: 15px;
+
+  @include mq-max(768px) {
+    max-width: 160px;
+  }
+}
+
+.navbar__user-nav {
+  transition: $duration * 2;
+  margin-right: 15px;
+
+  .is-out-cover-opened & {
+    opacity: 0;
+    visibility: hidden;
+  }
 }

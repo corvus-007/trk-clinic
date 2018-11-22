@@ -1,0 +1,21 @@
+.feedback-form {}
+
+.feedback-form__row {
+  @include mq-min(667px) {
+    display: flex;
+  }
+}
+
+.feedback-form__field {
+  flex-grow: 1;
+
+  @include mq-min(667px) {
+    & + & {
+      margin-left: 35px;
+    }
+  }
+}
+
+.feedback-form__actions {
+  text-align: center;
+}

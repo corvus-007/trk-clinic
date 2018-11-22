@@ -1,3 +1,39 @@
 .main-nav {
 
 }
+
+.main-nav__list {
+  @include clear-list();
+
+  max-height: 100%;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.15;
+    text-decoration: none;
+    text-align: center;
+    color: $muted-color;
+    color: $gray-164;
+    transition: $duration;
+
+    &:hover,
+    &:focus {
+      color: $base-color;
+    }
+  }
+
+  .current-menu-item a {
+    color: $accent-color;
+  }
+
+  @include mq-min(768px) {
+    a {
+      font-size: 80px;
+    }
+  }
+}

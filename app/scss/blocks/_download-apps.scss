@@ -9,7 +9,7 @@
 }
 
 .download-apps__item {
-  margin-right: rem(16);
+  margin-right: 16px;
 
   &:last-child {
     margin-right: 0;
@@ -32,9 +32,9 @@
 
 .download-apps__image {
   vertical-align: middle;
-  width: rem(100);
+  width: 100px;
 }
 
 .download-apps--large .download-apps__image {
-  width: rem(125);
+  width: 125px;
 }

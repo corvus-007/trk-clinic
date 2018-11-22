@@ -1,0 +1,60 @@
+.contact-layouts {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-layouts__item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: $duration * 3;
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.contact-layouts__map {
+
+}
+
+.contact-layouts__plan {
+  @include make-fit-object();
+}
+
+.contact-layouts__actions {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+  pointer-events: none;
+}
+
+.contact-layouts__toggle {
+  color: #ffffff;
+  background-color: $accent-color;
+  border-color: $accent-color;
+  border-radius: $border-radius;
+  margin-right: 35px;
+  pointer-events: all;
+
+  &:disabled {
+    color: $gray-164;
+    background-color: #e6e4e4;
+    border-color: #e6e4e4;
+    cursor: default;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

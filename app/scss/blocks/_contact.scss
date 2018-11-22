@@ -1,0 +1,38 @@
+.contact {
+  position: relative;
+
+  @include mq-max(1023px) {
+    padding-bottom: 0;
+  }
+}
+
+.contact__content {
+  @include mq-min(992px) {
+    max-width: 50%;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+}
+
+.contact__title {
+  text-align: left;
+}
+
+.contact__layouts {
+  position: relative;
+
+  @include mq-max(991px) {
+    @media (orientation: landscape) {
+      height: 80vh;
+    }
+  }
+
+  @include mq-min(992px) {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 50%;
+  }
+}

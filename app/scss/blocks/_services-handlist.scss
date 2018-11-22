@@ -1,0 +1,56 @@
+.services-handlist {
+  margin-bottom: -30px;
+
+  dl {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  dt {
+    position: absolute;
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  dd {
+    margin: 0;
+    padding-left: 40px;
+    font-size: 18px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $base-color;
+    transition: color $duration;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  @include mq-min(568px) {
+    column-count: 3;
+    column-gap: 40px;
+
+    dd {
+      padding-left: 30px;
+    }
+  }
+
+  @include mq-min(768px) {
+
+    dd {
+      padding-left: 40px;
+    }
+  }
+
+  @include mq-min(1024px) {
+    column-count: 3;
+  }
+}

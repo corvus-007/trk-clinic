@@ -1,11 +1,20 @@
 .textual {
-  font-size: rem(20);
   font-weight: 400;
-  // font-family: $secondary-font;
+  font-size: rem(18);
+  line-height: 1.35;
 
-  & > * + *:not(li) {
-    margin-top: 2rem;
+  dfn {
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  & > * + * {
+    margin-top: rem(18);
     margin-bottom: 0;
+  }
+
+  & > * + section {
+    margin-top: rem(18 * 5);
   }
 
   & > div {
@@ -18,66 +27,108 @@
   & > h4,
   & > h5,
   & > h6 {
-    font-weight: 500;
+    font-weight: 600;
+    line-height: 1.15;
     font-family: $primary-font;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
   }
 
   & > h2 {
-    font-size: rem(28);
+    font-size: rem(18);
   }
 
   & > h3 {
-    font-size: rem(25);
+    font-size: rem(18);
   }
 
   & > * + h2 {
-    margin-top: 3rem;
+    margin-top: rem(40);
   }
 
   & > * + h3 {
-    margin-top: 2.5rem;
+    margin-top: rem(40);
   }
 
   & > h2 + * {
-    margin-top: 1rem;
+    margin-top: rem(18);
   }
 
   & > h3 + * {
-    margin-top: 0.9rem;
+    margin-top: rem(18);
   }
 
-  & > h4 + * {
-    margin-top: 0.8rem;
+  & > section > h1,
+  & > section > h2,
+  & > section > h3,
+  & > section > h4,
+  & > section > h5,
+  & > section > h6 {
+    font-weight: 600;
+    line-height: 1.15;
+    font-family: $primary-font;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
   }
 
-  & > h2 + h3 {
-    // margin-top: 0.8rem;
+  & > section > h2 {
+    font-size: rem(18);
+  }
+
+  & > section > h3 {
+    font-size: rem(18);
+  }
+
+  & > section > * + h2 {
+    margin-top: rem(40);
+  }
+
+  & > section > * + h3 {
+    margin-top: rem(40);
+  }
+
+  & > section > h2 + * {
+    margin-top: rem(18);
+  }
+
+  & > section > h3 + * {
+    margin-top: rem(18);
   }
 
   & > img,
-  p > img,
-  div > img {
+  & > p > img,
+  & > div > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
   & > ul {
+    list-style: none;
+    padding: 0;
+
     li {
       position: relative;
+      padding-left: 25px;
 
       &::before {
         content: "";
         position: absolute;
-        left: -1em;
-        top: 0;
+        left: 2px;
+        top: 0.4em;
         z-index: -1;
-        width: em(20, 16);
-        height: em(20, 16);
+        width: 8px;
+        height: 8px;
+        background-color: $accent-color;
         border-radius: 50%;
-        background-color: $warning-color;
         box-sizing: border-box;
       }
+    }
+
+    li + li {
+      margin-top: 1em;
     }
   }
 

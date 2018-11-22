@@ -14,17 +14,12 @@
 
   a {
     display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-weight: 600;
     font-size: 12px;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.025em;
     color: $base-color;
     transition: color $duration;
-
-    &:hover {
-      color: $accent-color;
-    }
   }
 }

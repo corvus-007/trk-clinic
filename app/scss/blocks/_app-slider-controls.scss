@@ -18,16 +18,15 @@
   position: relative;
   padding: 0;
   padding-left: 35px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 12px;
-  line-height: 24px;
   font-family: $secondary-font;
   text-align: left;
   text-transform: uppercase;
   color: #ffd2d3;
   background: none;
   border: none;
-  transition: $duration * 1.5;
+  transition: $duration * 3;
   user-select: none;
   cursor: pointer;
 
@@ -44,7 +43,7 @@
     border: 3px solid #1e1e1e;
     border-radius: 50%;
     box-shadow: 0 0 0 6px rgba(#ffffff, 0.2),  0 0 0 3px rgba(#ffffff, 0.4);
-    transition: ($duration * 1.5);
+    transition: $duration * 3;
     will-change: transform;
   }
 

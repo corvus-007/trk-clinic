@@ -1,0 +1,49 @@
+.person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-card__wraplink {
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+  flex-grow: 1;
+  text-decoration: none;
+  color: $base-color;
+  transition: $duration;
+}
+
+.person-card__photo {
+  @include make-fit-object();
+
+  width: 160px;
+  flex-shrink: 0;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  filter: grayscale(0.9);
+  transition: $duration * 2;
+
+  .person-card__wraplink:hover &,
+  .person-card__wraplink:focus & {
+    filter: grayscale(0);
+  }
+}
+
+.person-card__content {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.person-card__name {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.person-card__post {
+  display: block;
+  color: $base-color;
+}

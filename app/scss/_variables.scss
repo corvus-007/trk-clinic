@@ -4,6 +4,11 @@ $accent-color: #e31e24;
 $primary-color: #48466D;
 $secondary-color: #3D84A8;
 
+$gray-36: #242424;
+$gray-164: #a4a4a4;
+$gray-183: #b7b7b7;
+$gray-249: #f9f9f9;
+
 $success-color: #11fd6d;
 $info-color: #b9dfff;
 $warning-color: #edf512;
@@ -25,6 +30,10 @@ $secondary-font: inherit;
 
 $duration: 0.25s;
 $border-radius: 2px;
+
+$navbar-mobile-height: 88px;
+$navbar-tablet-height: 93px;
+$navbar-desktop-height: 133px;
 
 // Grid
 $grid-columns: 12;

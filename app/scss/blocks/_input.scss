@@ -1,15 +1,16 @@
 .input {
   width: 100%;
   max-height: 150px;
-  padding: 15px;
+  padding: 15px 0;
   font: inherit;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 18px;
   resize: vertical;
-  background-color: #f5f5f5;
-  border: 1px solid #f5f5f5;
-  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom-color: #e6e4e4;
+  border-radius: 0;
   outline: none;
   box-shadow: none;
   box-sizing: border-box;
@@ -17,8 +18,8 @@
 
   &:hover,
   &:focus {
-    border-color: #e0e0e0;
-    background-color: #fff;
+    background-color: transparent;
+    border-bottom-color: darken(#e6e4e4, 15%);
   }
 
   &::placeholder {

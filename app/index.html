@@ -8,50 +8,11 @@
   <meta name="format-detection" content="telephone=no">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 
-<body>
-
-  <div class="navbar">
-    <div class="navbar__inner container">
-      <div class="navbar__logo">
-        <a href="index.html">
-          <img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="Логотип компании ТРК Клиник">
-        </a>
-      </div>
-      <nav class="navbar__user-nav user-nav">
-        <ul class="user-nav__list">
-          <li class="user-nav__item">
-            <a href="" class="user-nav__link">
-              <svg class="user-nav__icon" width="16" height="16">
-                <use xlink:href="images/symbols.svg#x"></use>
-              </svg>
-              <span class="user-nav__label">Записаться на прием</span>
-            </a>
-          </li>
-          <li class="user-nav__item">
-            <a href="" class="user-nav__link">
-              <svg class="user-nav__icon" width="16" height="16">
-                <use xlink:href="images/symbols.svg#x"></use>
-              </svg>
-              <span class="user-nav__label">Онлайн-консультация</span>
-            </a>
-          </li>
-          <li class="user-nav__item">
-            <a href="" class="user-nav__link">
-              <svg class="user-nav__icon" width="16" height="16">
-                <use xlink:href="images/symbols.svg#x"></use>
-              </svg>
-              <span class="user-nav__label">Личный кабинет</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <button class="navbar__toggle out-cover-toggle" type="button" aria-label="Показать меню">
-        <span class="out-cover-toggle__line"></span>
-      </button>
-    </div>
-  </div>
+<body class="homepage">
+  @@include('blocks/navbar.html')
 
   <section class="welcome">
     <div class="container">
@@ -68,32 +29,27 @@
       <div class="welcome__slider welcome-slider" data-welcome-slider>
         <div class="welcome-slider__item welcome-slide">
           <div class="welcome-slide__picture">
-            <img src="https://images.unsplash.com/photo-1534469693708-b3428f119ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b2e46c661ff01638d28fad1a61a8059c&auto=format&fit=crop&w=1350&q=80"
-              alt="">
+            <img src="https://images.unsplash.com/photo-1534469693708-b3428f119ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b2e46c661ff01638d28fad1a61a8059c&auto=format&fit=crop&w=1350&q=80" alt="">
           </div>
         </div>
         <div class="welcome-slider__item welcome-slide">
           <div class="welcome-slide__picture">
-            <img src="https://images.unsplash.com/photo-1527676343783-62ec30e7ae0f?ixlib=rb-0.3.5&s=18183add8271eb308f92015562604fb2&auto=format&fit=crop&w=1350&q=80"
-              alt="">
+            <img src="https://images.unsplash.com/photo-1527676343783-62ec30e7ae0f?ixlib=rb-0.3.5&s=18183add8271eb308f92015562604fb2&auto=format&fit=crop&w=1350&q=80" alt="">
           </div>
         </div>
         <div class="welcome-slider__item welcome-slide">
           <div class="welcome-slide__picture">
-            <img src="https://images.unsplash.com/photo-1499054488849-3dd812295ef0?ixlib=rb-0.3.5&s=092cd878ae3f988b68f2aaf0b73169bd&auto=format&fit=crop&w=1350&q=80"
-              alt="">
+            <img src="https://images.unsplash.com/photo-1499054488849-3dd812295ef0?ixlib=rb-0.3.5&s=092cd878ae3f988b68f2aaf0b73169bd&auto=format&fit=crop&w=1350&q=80" alt="">
           </div>
         </div>
 
         <div class="welcome-slider__pager">
-          <button class="welcome-slider__control welcome-slider__control--prev" data-slide-action="slide-prev" type="button"
-            aria-label="Предыдущий слайд">
+          <button class="welcome-slider__control welcome-slider__control--prev" data-slide-action="slide-prev" type="button" aria-label="Предыдущий слайд">
             <svg class="welcome-slider__control-icon" width="16" height="16">
               <use xlink:href="images/symbols.svg#arrow-prev"></use>
             </svg>
           </button>
-          <button class="welcome-slider__control welcome-slider__control--next" data-slide-action="slide-next" type="button"
-            aria-label="Следующий слайд">
+          <button class="welcome-slider__control welcome-slider__control--next" data-slide-action="slide-next" type="button" aria-label="Следующий слайд">
             <svg class="welcome-slider__control-icon" width="16" height="16">
               <use xlink:href="images/symbols.svg#arrow-next"></use>
             </svg>
@@ -104,14 +60,32 @@
     </div>
     <div class="container">
       <ul class="welcome__social welcome-social">
-        <li><a href="" target="_blank">Вконтакте</a></li>
-        <li><a href="" target="_blank">Инстаграм</a></li>
-        <li><a href="" target="_blank">Фейсбук</a></li>
+        <li>
+          <a class="slide-link" href="" target="_blank">
+            <span class="slide-link__text" data-text="Вконтакте">
+              Вконтакте
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="slide-link" href="" target="_blank">
+            <span class="slide-link__text" data-text="Инстаграм">
+              Инстаграм
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="slide-link" href="" target="_blank">
+            <span class="slide-link__text" data-text="Фейсбук">
+              Фейсбук
+            </span>
+          </a>
+        </li>
       </ul>
     </div>
   </section>
 
-  <section class="section app-presentation">
+  <section class="app-presentation">
     <div class="app-presentation__inner container">
       <div class="app-presentation__column app-presentation__content-wrapper">
         <div class="app-presentation__content">
@@ -136,29 +110,24 @@
             </ul>
           </div>
         </div>
-
       </div>
       <div class="app-presentation__column app-presentation__slider-wrapper">
         <div class="app-slider-mocup-phone">
           <div class="app-slider" data-app-slider>
             <div class="app-slider__item">
-              <img class="app-slider__image" src="http://placehold.it/200x356/00ADB5/fff" srcset="http://placehold.it/400x712/00ADB5/fff 2x"
-                alt="">
+              <img class="app-slider__image" src="http://placehold.it/200x356/00ADB5/fff" srcset="http://placehold.it/400x712/00ADB5/fff 2x" alt="">
               <span class="app-slider__description">Онлайн-запись на прием</span>
             </div>
             <div class="app-slider__item">
-              <img class="app-slider__image" src="http://placehold.it/200x356/F9ED69/fff" srcset="http://placehold.it/400x712/F9ED69/fff 2x"
-                alt="">
+              <img class="app-slider__image" src="http://placehold.it/200x356/F9ED69/fff" srcset="http://placehold.it/400x712/F9ED69/fff 2x" alt="">
               <span class="app-slider__description">Информация по всем оказываемым услугам</span>
             </div>
             <div class="app-slider__item">
-              <img class="app-slider__image" src="http://placehold.it/200x356/F08A5D/fff" srcset="http://placehold.it/400x712/F08A5D/fff 2x"
-                alt="">
+              <img class="app-slider__image" src="http://placehold.it/200x356/F08A5D/fff" srcset="http://placehold.it/400x712/F08A5D/fff 2x" alt="">
               <span class="app-slider__description">История болезни прямо в кармане</span>
             </div>
             <div class="app-slider__item">
-              <img class="app-slider__image" src="http://placehold.it/200x356/B83B5E/fff" srcset="http://placehold.it/400x712/B83B5E/fff 2x"
-                alt="">
+              <img class="app-slider__image" src="http://placehold.it/200x356/B83B5E/fff" srcset="http://placehold.it/400x712/B83B5E/fff 2x" alt="">
               <span class="app-slider__description">Уведомления о результатах обследования</span>
             </div>
           </div>
@@ -171,7 +140,9 @@
             <!-- generate from js -->
           </div>
         </div>
-        <a class="app-presentation__more-button button" href="">Подробнее</a>
+        <p class="app-presentation__actions">
+          <a class="app-presentation__more-button button" href="">Подробнее</a>
+        </p>
       </div>
     </div>
   </section>
@@ -181,15 +152,117 @@
       <div class="common-header">
         <h2 class="common-title">Направления деятельности специалистов</h2>
       </div>
-      <ul class="services__handlist services-handlist">
-        <li>
-          <span>A</span>
-          <ul>
-            <li></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="services__persons services-persons"></ul>
+      <div class="services__handlist services-handlist">
+        <dl>
+          <dt>Г</dt>
+          <dd><a href="">Гастроэнтеролог</a></dd>
+          <dd><a href="">Гинеколог</a></dd>
+        </dl>
+        <dl>
+          <dt>К</dt>
+          <dd><a href="">Кардиолог</a></dd>
+        </dl>
+        <dl>
+          <dt>М</dt>
+          <dd><a href="">Маммолог</a></dd>
+        </dl>
+        <dl>
+          <dt>Н</dt>
+          <dd><a href="">Невролог</a></dd>
+        </dl>
+        <dl>
+          <dt>О</dt>
+          <dd><a href="">Онколог</a></dd>
+          <dd><a href="">Оториноларинголог</a></dd>
+        </dl>
+        <dl>
+          <dt>П</dt>
+          <dd><a href="">Педиатр</a></dd>
+        </dl>
+        <dl>
+          <dt>У</dt>
+          <dd><a href="">УЗИ</a></dd>
+          <dd><a href="">Уролог</a></dd>
+        </dl>
+      </div>
+      <div class="services__separator"></div>
+      <div class="services__persons services-persons">
+        <div class="services-persons__text">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor reprehenderit veniam tempora illo necessitatibus, nisi, accusantium iste aliquid laborum dolores eaque sint dolore. Reprehenderit odio explicabo dicta vel exercitationem vitae!
+          </p>
+        </div>
+        <ul class="services-persons__slider services-persons-slider" data-services-persons>
+          <li class="services-persons-slider__item">
+            <div class="services-persons__person person-card">
+              <a href="doctor-page.html" class="person-card__wraplink">
+                <div class="services-persons-slider__photo person-card__photo">
+                  <img src="https://uinames.com/api/photos/male/19.jpg" alt="Константин Константинопольский">
+                </div>
+                <p class="services-persons-slider__content person-card__content">
+                  <b class="services-persons-slider__name person-card__name">Константин Константинопольский</b>
+                  <span class="services-persons-slider__post person-card__post">кардиолог</span>
+                </p>
+              </a>
+            </div>
+          </li>
+          <li class="services-persons-slider__item">
+            <div class="services-persons__person person-card">
+              <a href="doctor-page.html" class="person-card__wraplink">
+                <div class="services-persons-slider__photo person-card__photo">
+                  <img src="https://uinames.com/api/photos/male/9.jpg" alt="Глеб Шевченко">
+                </div>
+                <p class="services-persons-slider__content person-card__content">
+                  <b class="services-persons-slider__name person-card__name">Глеб Шевченко</b>
+                  <span class="services-persons-slider__post person-card__post">уролог</span>
+                </p>
+              </a>
+            </div>
+          </li>
+          <li class="services-persons-slider__item">
+            <div class="services-persons__person person-card">
+              <a href="doctor-page.html" class="person-card__wraplink">
+                <div class="services-persons-slider__photo person-card__photo">
+                  <img src="https://uinames.com/api/photos/male/18.jpg" alt="Василий Романов">
+                </div>
+                <p class="services-persons-slider__content person-card__content">
+                  <b class="services-persons-slider__name person-card__name">Василий Романов</b>
+                  <span class="services-persons-slider__post person-card__post">педиатр</span>
+                </p>
+              </a>
+            </div>
+          </li>
+          <li class="services-persons-slider__item">
+            <div class="services-persons__person person-card">
+              <a href="doctor-page.html" class="person-card__wraplink">
+                <div class="services-persons-slider__photo person-card__photo">
+                  <img src="https://uinames.com/api/photos/female/22.jpg" alt="Ольга Калининa">
+                </div>
+                <p class="services-persons-slider__content person-card__content">
+                  <b class="services-persons-slider__name person-card__name">Ольга Калининa</b>
+                  <span class="services-persons-slider__post person-card__post">невролог</span>
+                </p>
+              </a>
+            </div>
+          </li>
+          <li class="services-persons-slider__item">
+            <div class="services-persons__person person-card">
+              <a href="doctor-page.html" class="person-card__wraplink">
+                <div class="services-persons-slider__photo person-card__photo">
+                  <img src="https://uinames.com/api/photos/male/13.jpg" alt="Богдан Яковлев">
+                </div>
+                <p class="services-persons-slider__content person-card__content">
+                  <b class="services-persons-slider__name person-card__name">Богдан Яковлев</b>
+                  <span class="services-persons-slider__post person-card__post">маммолог</span>
+                </p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <p class="services__actions">
+        <a class="services__to-appointment button" href="">Записаться на прием</a>
+      </p>
     </div>
   </section>
 
@@ -198,16 +271,80 @@
       <div class="common-header">
         <h2 class="common-title">Жалобы и предложения</h2>
       </div>
+      <div class="feedback__form-wrapper">
+        <form class="feedback__form feedback-form" action="" method="POST">
+          <div class="feedback-form__row">
+            <label class="feedback-form__field field">
+              <span class="field__label visually-hidden">Ваше имя</span>
+              <span class="field__control">
+                <input class="field__input input" type="text" name="person_name" placeholder="Ваше имя" required>
+              </span>
+            </label>
+            <label class="feedback-form__field field">
+              <span class="field__label visually-hidden">Номер телефона</span>
+              <span class="field__control">
+                <input class="field__input input" type="tel" name="person_phone" placeholder="Номер телефона" required>
+              </span>
+            </label>
+          </div>
+          <div class="feedback-form__row">
+            <label class="feedback-form__field field">
+              <span class="field__label visually-hidden">Текст сообщения</span>
+              <span class="field__control">
+                <textarea class="field__input input" name="person_message" rows="4" placeholder="Текст сообщения"></textarea>
+              </span>
+            </label>
+          </div>
+          <div class="feedback-form__actions">
+            <input class="feedback-form__submit button" type="submit" value="Отправить">
+          </div>
+        </form>
+      </div>
     </div>
   </section>
 
-  <!-- @@include('blocks/main-header.html') -->
-
-  <main class="main">
+  <section class="common-section contact">
     <div class="container">
-      container
+      <div class="contact__content">
+        <div class="common-header">
+          <h2 class="contact__title common-title">Контактная информация</h2>
+        </div>
+        <div class="contact__info contact-info">
+          <div class="contact-info__section">
+            <h3 class="contact-info__title">Адрес</h3>
+            <span class="contact-info__value">ул. Объездная, 32 (ТРЦ “Аэро Парк”, вход №6)</span>
+          </div>
+          <div class="contact-info__section">
+            <h3 class="contact-info__title">Телефон</h3>
+            <a class="contact-info__value" href="tel:+74832403003">+7 (4832) 40-30-03</a>
+          </div>
+          <div class="contact-info__section">
+            <h3 class="contact-info__title">График работы</h3>
+            <ul class="contact-info__value contact-work-time">
+              <li class="contact-work-time__item">
+                <span class="contact-work-time__key">Пн-Вс</span>
+                <span class="contact-work-time__val">07:30–21:00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact__taxi-wrapper">
+          <script src="//yastatic.net/taxi-widget/ya-taxi-widget.js"></script>
+          <div class="ya-taxi-widget" data-use-location="true" data-size="s" data-theme="action" data-title="На такси в ТРК Клиник" data-point-a="" data-point-b="34.31736,53.273323" data-ref="http%3A%2F%2Flocalhost%3A3006%2F" data-proxy-url="https://3.redirect.appmetrica.yandex.com/route?start-lat={start-lat}&amp;start-lon={start-lon}&amp;end-lat={end-lat}&amp;end-lon={end-lon}&amp;ref={ref}&amp;appmetrica_tracking_id=1178268795219780156" data-description="Объездная улица, 32"></div>
+        </div>
+      </div>
     </div>
-  </main>
+    <div class="contact__layouts contact-layouts">
+      <div class="contact-layouts__item contact-layouts__item--active contact-layouts__map" id="contact-map" data-contact-layout="map"></div>
+      <div class="contact-layouts__item contact-layouts__plan" data-contact-layout="plan">
+        <img src="https://images.unsplash.com/photo-1470506926202-05d3fca84c9a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d4ba5d17ed5ba1fac74c8ca5cff92c13&auto=format&fit=crop&w=1350&q=80" alt="План ТРЦ Аэропарк">
+      </div>
+      <div class="contact-layouts__actions">
+        <button class="contact-layouts__toggle button" type="button" disabled data-bind-layout="map">На Яндекс карте</button>
+        <button class="contact-layouts__toggle button" type="button" data-bind-layout="plan">По ТРЦ Аэропарк</button>
+      </div>
+    </div>
+  </section>
 
   @@include('blocks/main-footer.html')
   @@include('blocks/site-scripts.html')

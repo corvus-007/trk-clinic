@@ -4,6 +4,15 @@
   min-height: 100vh;
 }
 
-.main {
+.main-content {
   flex-grow: 1;
+  padding-top: $navbar-mobile-height;
+  padding-bottom: 70px;
+
+  @include mq-min(768px) {
+    padding-top: $navbar-tablet-height;
+  }
+  @include mq-min(1200px) {
+    padding-top: $navbar-desktop-height;
+  }
 }

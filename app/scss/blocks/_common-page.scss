@@ -1,0 +1,39 @@
+.common-page {
+  padding-top: 60px;
+
+  @include mq-min(1024px) {
+    padding-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  @include mq-min(1200px) {
+    padding-top: 100px;
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+}
+
+.common-page__header {
+  margin-bottom: 40px;
+}
+
+.common-page__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 1.15;
+  word-break: break-word;
+
+  @include mq-min(568px) {
+    font-size: 60px;
+  }
+
+  @include mq-min(1024px) {
+    font-size: 75px;
+  }
+}
+
+.common-page__body {
+
+}

@@ -1,0 +1,16 @@
+.contact-work-time {
+  @include clear-list();
+}
+
+.contact-work-time__item {
+  margin-bottom: 15px;
+}
+
+.contact-work-time__key {
+  display: block;
+  text-transform: lowercase;
+}
+
+.contact-work-time__val {
+  display: block;
+}

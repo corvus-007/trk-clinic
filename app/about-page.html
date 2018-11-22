@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Доктор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  @@include('blocks/navbar.html')
+
+  <main class="main-content container">
+    <article class="common-page about-service">
+      <div class="common-page__header">
+        <h1 class="common-page__title">Оториноларинголог</h1>
+      </div>
+      <div class="common-page__body">
+        <div class="textual">
+          <p><dfn>Оториноларинголо́гия</dfn> (также часто <b>отоларинголо́гия</b>) — это раздел медицины и медицинская специальность, которая специализируется на диагностике и лечении патологий уха, горла, носа, а также головы и шеи. Практикующие врачи по данной специальности называются оториноларингологами или сокращенно ЛОР-докторами (от слова «ларингооторинолог»).</p>
+
+          <section class="about-service__persons about-service-persons">
+            <h2>Профессионалы в данной области</h2>
+            <ul class="about-service-persons__list">
+              <li class="about-service-persons__list-item">
+                <div class="person-card">
+                  <a href="doctor-page.html" class="person-card__wraplink">
+                    <div class="person-card__photo">
+                      <img src="https://uinames.com/api/photos/female/9.jpg" alt="Ольга Смирнова">
+                    </div>
+                    <p class="person-card__content">
+                      <b class="person-card__name">Ольга Смирнова</b>
+                      <span class="person-card__post">оториноларинголог</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="persons__list-item">
+                <div class="person-card">
+                  <a href="doctor-page.html" class="person-card__wraplink">
+                    <div class="person-card__photo">
+                      <img src="https://uinames.com/api/photos/male/15.jpg" alt="Сергей Иванов">
+                    </div>
+                    <p class="person-card__content">
+                      <b class="person-card__name">Сергей Иванов</b>
+                      <span class="person-card__post">оториноларинголог</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  @@include('blocks/main-footer.html')
+  @@include('blocks/site-scripts.html')
+</body>
+
+</html>

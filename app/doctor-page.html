@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Доктор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  @@include('blocks/navbar.html')
+
+  <main class="main-content container">
+    <article class="common-page person-profile">
+      <div class="person-profile__photo-wrapper">
+        <div class="person-profile__photo">
+          <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e813f4a3445aa82520e6172bed73ab1d&auto=format&fit=crop&w=1335&q=80" alt="Юлия Шарова">
+        </div>
+      </div>
+      <div class="person-profile__content">
+        <div class="common-page__header">
+          <h1 class="common-page__title">Юлия Шарова</h1>
+        </div>
+        <div class="common-page__body">
+          <div class="textual">
+            <h2>Специальность</h2>
+            <p>Оториноларинголог</p>
+
+            <h2>Кратко о докторе</h2>
+            <p>Профессию врача начала осваивать с 14-ти летнего возраста, когда поступила в медицинское училище. При поступлении в медицинский институт уже на первых курсах доктор поняла, что хочет заниматься травматологией-ортопедией и мануальной терапией.</p>
+            <p>В настоящий момент совмещает две специальности амбулаторной и оперативной травматологи-ортопедии, а также, мануальной терапии, с удовольствием помогает людям в решении проблем вертеброгенной патологии. Опыт работы в мануальной терапии позвоночника в течении 18 лет.</p>
+
+            <h2>Хронология</h2>
+            <ul>
+              <li>1997 г. - 2003 г. – Российский государственный медицинский университет Министерства здравоохранения Российской Федерации, специальность "Лечебное дело".</li>
+              <li>2003 г. - 2005 г. – Российская медицинская академия последипломного образования (РМАПО), клиническая ординатура по травматологии-ортопедии.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  @@include('blocks/main-footer.html')
+  @@include('blocks/site-scripts.html')
+</body>
+
+</html>

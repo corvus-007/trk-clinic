@@ -20,16 +20,19 @@
 @import "blocks/form";
 @import "blocks/table";
 @import "blocks/popup";
-@import "blocks/custom-ol";
-@import "blocks/custom-ul";
+@import "blocks/common";
+@import "blocks/common-page";
+@import "blocks/slide-link";
+// @import "blocks/custom-ol";
+// @import "blocks/custom-ul";
 @import "blocks/textual";
 @import "blocks/download-apps";
-@import "blocks/common-section";
+@import "blocks/person-card";
 @import "blocks/out-cover-toggle";
 // @import "blocks/main-header";
 @import "blocks/user-nav";
 @import "blocks/navbar";
-// @import "blocks/main-nav";
+@import "blocks/main-nav";
 @import "blocks/welcome-social";
 @import "blocks/welcome-slide";
 @import "blocks/welcome-slider";
@@ -38,9 +41,22 @@
 @import "blocks/app";
 @import "blocks/app-slider-mocup-phone";
 @import "blocks/app-slider-controls";
+@import "blocks/services-handlist";
+@import "blocks/services-persons-slider";
+// @import "blocks/services-person";
+@import "blocks/services-persons";
+@import "blocks/services";
+@import "blocks/feedback-form";
+@import "blocks/feedback";
+@import "blocks/contact-work-time";
+@import "blocks/contact-info";
+@import "blocks/contact-layouts";
+@import "blocks/contact";
+@import "blocks/person-profile";
+@import "blocks/about-service-persons";
 
 
 // @import "blocks/page";
 @import "blocks/main-footer";
 @import "blocks/out-cover";
-@import "blocks/socials";
+// @import "blocks/socials";
