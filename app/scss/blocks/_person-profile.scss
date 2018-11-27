@@ -7,6 +7,7 @@
 
   @include mq-min(1024px) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
     align-items: flex-start;
   }
@@ -17,8 +18,8 @@
   margin-right: -$gutter / 2;
 
   @include mq-min(1024px) {
-    position: relative;
-    top: 70px;
+    position: absolute;
+    top: 200px;
     flex-shrink: 0;
     width: 40%;
     margin-left: 0;
@@ -37,10 +38,14 @@
   }
 }
 
+.person-profile__header {
+  width: 100%;
+}
+
 .person-profile__content {
   @include mq-min(1024px) {
-    flex-grow: 1;
     width: 60%;
+    margin-right: auto;
     padding-right: 60px;
     box-sizing: border-box;
   }

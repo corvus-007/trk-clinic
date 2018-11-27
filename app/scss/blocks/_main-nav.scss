@@ -10,12 +10,14 @@
 
   a {
     display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 30px;
     line-height: 1.15;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     text-align: center;
     color: $muted-color;
     color: $gray-164;
@@ -33,7 +35,7 @@
 
   @include mq-min(768px) {
     a {
-      font-size: 80px;
+      font-size: 50px;
     }
   }
 }

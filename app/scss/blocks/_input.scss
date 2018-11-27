@@ -16,14 +16,22 @@
   box-sizing: border-box;
   transition: $duration * 2;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: transparent;
     border-bottom-color: darken(#e6e4e4, 15%);
+  }
+
+  &:focus {
+    background-color: transparent;
+    border-bottom-color: darken(#e6e4e4, 30%);
   }
 
   &::placeholder {
     color: $base-color;
     opacity: 0.5;
+  }
+
+  &.wpcf7-not-valid {
+    border-bottom-color: $danger-color;
   }
 }

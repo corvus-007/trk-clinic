@@ -9,6 +9,7 @@
   width: 100vw;
   padding: 20px;
   padding-top: $navbar-mobile-height;
+  padding-bottom: $navbar-mobile-height;
   transform: scale(1.2);
   color: $base-color;
   background-color: #ffffff;
@@ -28,10 +29,12 @@
 
   @include mq-min(768px) {
     padding-top: $navbar-tablet-height;
+    padding-bottom: $navbar-tablet-height;
   }
 
   @include mq-min(1200px) {
     padding-top: $navbar-desktop-height;
+    padding-bottom: $navbar-desktop-height;
   }
 }
 

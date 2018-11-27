@@ -5,7 +5,7 @@
   box-sizing: border-box;
 
   @include mq-min(1024px) {
-    // padding-top: 150px;
+    padding-top: 150px;
   }
 }
 
@@ -23,5 +23,11 @@
     right: 0;
     bottom: 0;
     background-color: rgba(#ffffff, 0.4);
+  }
+
+  @include mq-max(1023px) {
+    &::after {
+      background-image: linear-gradient(to bottom, rgba(#ffffff, 0.99) 5%, transparent);
+    }
   }
 }

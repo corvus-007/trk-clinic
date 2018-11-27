@@ -3,6 +3,7 @@
 
   .slick-track {
     display: flex !important;
+    align-items: flex-start;
 
     &::before,
     &::after {
@@ -60,7 +61,7 @@
     }
   }
 
-  @include mq-min(1024px) {
+  @include mq-min(768px) {
     padding-left: 150px;
     padding-right: 150px;
   }

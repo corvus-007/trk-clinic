@@ -7,8 +7,11 @@
 }
 
 .contact__content {
+  margin-bottom: 40px;
+
   @include mq-min(992px) {
     max-width: 50%;
+    margin-bottom: 0;
     padding-right: 30px;
     box-sizing: border-box;
   }

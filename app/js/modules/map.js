@@ -1,7 +1,7 @@
 window.map = (function (window, $) {
   'use strict';
 
-  var dirname = '';
+  var dirname = window.util.isDevMode() ? '' : '/wp-content/themes/trk/';
 
   var mapElem = document.querySelector('#contact-map');
 

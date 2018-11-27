@@ -3,3 +3,4 @@
 //=require modules/out-cover.js
 //=require modules/map.js
 //=require modules/contact-layouts.js
+//=require modules/services-handlist.js

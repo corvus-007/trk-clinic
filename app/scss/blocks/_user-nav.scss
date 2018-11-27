@@ -28,6 +28,13 @@
   font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
+  color: #ff3c08;
+  transition: $duration * 1.5;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .user-nav__icon {

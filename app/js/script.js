@@ -107,8 +107,8 @@ document.addEventListener('DOMContentLoaded', function () {
       breakpoint: 770,
       settings: {
         slidesToShow: 1,
-        centerPadding: '5%',
-        arrows: false
+        centerPadding: '0',
+        // arrows: false
       }
     }, {
       breakpoint: 670,
