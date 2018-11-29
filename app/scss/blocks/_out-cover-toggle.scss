@@ -66,3 +66,12 @@
     opacity: 0;
   }
 }
+
+.out-cover-toggle__touch-area {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  bottom: -20px;
+  left: -20px;
+  border-radius: 50%;
+}
