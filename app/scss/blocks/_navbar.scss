@@ -49,16 +49,21 @@
 }
 
 .navbar__logo {
-  margin-right: 15px;
+  margin-right: 20px;
 
-  @include mq-max(768px) {
+  @include mq-max(767px) {
     max-width: 160px;
   }
 }
 
+.navbar__phone {
+  margin-left: auto;
+  margin-right: 10%;
+}
+
 .navbar__user-nav {
+  margin-right: 10%;
   transition: $duration * 2;
-  margin-right: 15px;
 
   .is-out-cover-opened & {
     opacity: 0;

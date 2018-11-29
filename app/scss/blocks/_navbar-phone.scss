@@ -1,0 +1,22 @@
+.navbar-phone {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.navbar-phone__icon {
+  width: 32px;
+  height: 32px;
+
+  @include mq-min(700px) {
+    display: none;
+  }
+}
+
+.navbar-phone__label {
+  @include mq-max(700px) {
+    display: none;
+  }
+}
