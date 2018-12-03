@@ -59,6 +59,12 @@
 .navbar__phone {
   margin-left: auto;
   margin-right: 10%;
+  transition: $duration * 2;
+
+  .is-out-cover-opened & {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .navbar__user-nav {
