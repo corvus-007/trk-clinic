@@ -75,23 +75,25 @@
 }
 
 .services-persons-slider__photo {
+  max-width: 240px;
+  max-height: 240px;
+  transform: scale(0.67);
   transition: $duration * 3;
   will-change: transform;
 
   .slick-center & {
-    transform: scale(1.5);
+    transform: scale(1);
     filter: none;
   }
 }
 
 .services-persons-slider__content {
-  position: relative;
-  top: 0;
+  transform: translateY(-40px);
   transition: $duration * 3;
-  will-change: top;
+  will-change: transform;
 
   .slick-center & {
-    top: 40px;
+    transform: translateY(0);
   }
 }
 
