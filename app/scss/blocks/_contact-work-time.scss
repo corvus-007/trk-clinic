@@ -1,9 +1,18 @@
 .contact-work-time {
   @include clear-list();
+
+  @include mq-min(768px) {
+    display: flex;
+    max-width: 440px;
+  }
 }
 
 .contact-work-time__item {
   margin-bottom: 15px;
+
+  @include mq-min(768px) {
+    @include calc-column-width(3);
+  }
 }
 
 .contact-work-time__key {

@@ -3,3 +3,4 @@
 //=require ../../node_modules/inputmask/dist/min/jquery.inputmask.bundle.min.js
 //=require ../../node_modules/slick-carousel/slick/slick.min.js
 //=require ../../node_modules/sticky-kit/dist/sticky-kit.min.js
+//=require ../../node_modules/jquery.pep.js/src/jquery.pep.js

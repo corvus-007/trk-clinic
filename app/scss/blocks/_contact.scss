@@ -25,6 +25,9 @@
   position: relative;
 
   @include mq-max(991px) {
+    height: 100vmin;
+    max-height: 500px;
+
     @media (orientation: landscape) {
       height: 80vh;
     }

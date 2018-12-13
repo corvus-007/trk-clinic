@@ -1,5 +1,5 @@
 .contact-info {
-  @include mq-range(568px, 767px) {
+  @include mq-range(667px, 767px) {
     display: flex;
   }
 }
@@ -7,8 +7,8 @@
 .contact-info__section {
   margin-bottom: 30px;
 
-  @include mq-range(568px, 767px) {
-    @include calc-column-width(3, 20px);
+  @include mq-range(667px, 767px) {
+    @include calc-column-width(4, 20px);
   }
 }
 
@@ -26,4 +26,8 @@
   font-size: 18px;
   text-decoration: none;
   color: $base-color;
+
+  @include mq-range(667px, 767px) {
+    font-size: 15px;
+  }
 }

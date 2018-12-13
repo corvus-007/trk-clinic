@@ -4,6 +4,15 @@ window.outCover = (function () {
   var outCover = document.querySelector('.out-cover');
   var outCoverToggle = document.querySelector('.out-cover-toggle');
   var scrollWidth = window.util.getScrollbarWidth();
+  var menuItems = outCover.querySelectorAll('.main-nav .current-menu-item');
+
+  menuItems.forEach(function (item) {
+    var link = item.querySelector('a');
+    var hrefAttr = link.getAttribute('href');
+    if (/#section/.test(hrefAttr)) {
+      item.classList.remove('current-menu-item');
+    }
+  });
 
   var onOutCoverEscPress = function (event) {
     if (event.keyCode === window.util.KEYCODE_ESC) {
@@ -30,6 +39,16 @@ window.outCover = (function () {
 
     document.removeEventListener('keydown', onOutCoverEscPress);
   };
+
+
+  outCover.addEventListener('click', function (evt) {
+    var target = evt.target;
+    var isLink = target.matches('.main-nav li a');
+
+    if (isLink) {
+      hideOutCover();
+    }
+  });
 
   outCoverToggle.addEventListener('click', function (event) {
     event.preventDefault();

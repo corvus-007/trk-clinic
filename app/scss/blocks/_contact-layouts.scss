@@ -24,7 +24,13 @@
 }
 
 .contact-layouts__plan {
-  @include make-fit-object();
+  // @include make-fit-object();
+
+  img {
+    max-width: none;
+    height: 100%;
+    cursor: grab;
+  }
 }
 
 .contact-layouts__actions {

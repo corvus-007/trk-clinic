@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
       accessibility: false,
       speed: 700,
       arrows: false,
+      autoplay: true,
       slide: '.welcome-slider__item',
       responsive: [{
         breakpoint: 1024,
@@ -132,4 +133,34 @@ document.addEventListener('DOMContentLoaded', function () {
       offset_top: 110
     });
   }
+
+
+
+
+  var planContainer = document.querySelector('.contact-layouts__plan');
+
+  if (planContainer) {
+    var planImage = planContainer.querySelector('img');
+    planImage.addEventListener('load', function () {
+      setConstrainPlanContainer();
+    });
+    setConstrainPlanContainer();
+  }
+
+
+  function constrainArray() {
+    var wDiff = planImage.clientWidth - planContainer.clientWidth;
+    var hDiff = planImage.clientHeight - planContainer.clientHeight;
+
+    return [-hDiff, 0, 0, -wDiff];
+  }
+
+  function setConstrainPlanContainer() {
+    $(planImage).pep({
+      constrainTo: constrainArray()
+    });
+  }
+
+
+
 });

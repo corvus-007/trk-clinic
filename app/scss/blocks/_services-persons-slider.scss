@@ -98,12 +98,7 @@
 }
 
 .services-persons-slider__name {
-  transition: $duration * 2;
-  will-change: letter-spacing;
-
-  .slick-center & {
-    letter-spacing: 0.03em;
-  }
+  letter-spacing: 0.03em;
 }
 
 .services-persons-slider__post {
