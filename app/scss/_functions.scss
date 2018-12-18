@@ -28,3 +28,22 @@ $context-default: $font-size;
 
   @return ($target / $context) * 1rem;
 }
+
+// VH convert
+
+@function vh($target, $viewportHeight: $vh-height-bp) {
+  @if (unitless($target)) {
+    $target: $target;
+  } @else {
+    $target: $target / 1px;
+  }
+
+  @if (unitless($viewportHeight)) {
+    $viewportHeight: $viewportHeight
+  } @else {
+    $viewportHeight: $viewportHeight / 1px;
+  }
+
+  // высота шрифта в макете / высота макета * 100 + vh
+  @return ($target / $viewportHeight) * 100vh;
+}
